@@ -1,0 +1,98 @@
+/* DROP TABLE IF EXISTS Person; */
+DROP TABLE IF EXISTS orders;
+
+/* CREATE TABLE IF NOT EXISTS Person(
+ID INTEGER PRIMARY KEY,
+Name TEXT,
+Age NUMBER,
+Height INTEGER,
+City TEXT,
+FavoriteColor TEXT);
+
+INSERT INTO Person(Name, Age, Height, City, FavoriteColor)
+VALUES
+('Tushar', 30, 150, 'Phoenix','Black'),
+('Manisha', 29, 250, 'Phoenix','Green'),
+('Fluffy', 1, 170, 'Phoenix','White'),
+('Ravi', 25, 15, 'Tempe','Red'),
+('Mulla', 22, 10, 'Toronto','Yellow'); 
+
+SELECT * FROM Person ORDER BY Height ASC;   
+SELECT * FROM Person ORDER BY Height DESC;  
+ SELECT * FROM Person ORDER BY Age ASC; 
+SELECT * FROM Person ORDER BY Age DESC; 
+SELECT * FROM Person WHERE Age >20; 
+SELECT * FROM Person WHERE age =1; 
+SELECT * FROM Person  WHERE Age <20 OR Age >30;
+SELECT * FROM Person WHERE Age !=22; 
+
+/* SELECT * FROM Person WHERE FavoriteColor !='Red'; */
+/* SELECT * FROM Person WHERE FavoriteColor !='Red' AND FavoriteColor!='Blue';  */
+/* SELECT * FROM Person WHERE FavoriteColor = 'Green' OR FavoriteColor ='Black'; */
+/* SELECT * FROM Person WHERE FavoriteColor IN('Green', 'Blue', 'Yellow'); */
+/* SELECT * FROM Person WHERE FavoriteColor IN('White', 'Yellow'); */
+/* 
+
+CREATE TABLE IF NOT EXISTS orders(
+ PersonId INTEGER PRIMARY KEY,
+ ProductName TEXT,
+  ProductPrice Number,
+  Quantity Number);
+  
+  INSERT INTO orders(ProductName, ProductPrice, Quantity)
+  VALUES 
+  ('pizza', 10, 5),
+  ('soda',10,5),
+  ('phone',500,1),
+  ('laptop',1000,2),
+  ('charger',50,1); */
+  
+/*  SELECT*FROM orders;  */
+/* SELECT SUM(Quantity) FROM orders; */
+/* SELECT SUM(ProductPrice)FROM orders; */
+
+/* SELECT SUM(ProductPrice * Quantity)FROM orders 
+WHERE PersonId = 2; */
+/* /*   SELECT * FROM ARTIST; */
+/*  INSERT INTO Artist(Name)
+ VALUES('AR Rehman'),
+ ('Atif Aslam'),
+ ('Arijit'); */
+ 
+
+/* SELECT * FROM Artist ORDER BY Name DESC LIMIT 10; */
+ /* SELECT * FROM Artist ORDER BY Name ASC LIMIT 5; */
+/* SELECT * FROM  Artist  
+WHERE NAME LIKE 'BLACK%';  */
+/* SELECT * FROM  Artist  
+WHERE NAME LIKE '%BLACK%'; */
+
+
+
+
+
+  
+
+/*   SELECT * FROM Person; */
+/* SELECT FirstName,LastName FROM Employee
+WHERE City ='Calgary'; */
+
+
+/* SELECT FirstName,LastName,Max(Birthdate) FROM Employee; */
+/* 
+SELECT COUNT() FROM Employee 
+WHERE City ='Lethbridge';
+ */
+
+/* SELECT * FROM INVOICE; */
+/* SELECT COUNT(*) FROM INVOICE
+WHERE BillingCountry = 'USA'; */
+
+/* SELECT MAX(Total) from Invoice; */
+/* SELECT Min(Total) from Invoice; */
+/* 
+/* SELECT COUNT(*) FROM invoice WHERE Total <5; */
+/* SELECT AVG(Total) FROM Invoice;  */
+
+
+
